@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get Involved — Daira</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Marcellus&family=Playfair+Display:ital,wght@1,600;1,700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Poppins:wght@500;600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="helplines-body">
+  <header class="site">
+    <div class="container">
+      <div class="brand-block">
+        <img src="images/daira-logo.jpeg" alt="Daira" class="brand-logo" />
+        <span class="brand-name">Daira</span>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="helplines.html">Helplines</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container page">
+      <h1>Get Involved</h1>
+      <p class="page-lead" style="max-width: none;">
+        Join the team, or support Daira financially — there are two ways to get involved right
+        now. Pick whichever fits.
+      </p>
+
+      <div class="rights-panel">
+       <div class="involved-center">
+        <div class="involved-tabs" role="tablist">
+          <button type="button" class="involved-tab is-active" data-tab="join">Join the team</button>
+          <button type="button" class="involved-tab" data-tab="donate">Support financially</button>
+        </div>
+
+        <div class="involved-panel" id="panel-join">
+          <p class="about-text" style="margin-top:0;">
+            Tell us a bit about yourself and what you're interested in helping with. This opens
+            your email app with everything filled in and addressed to us — just hit send.
+          </p>
+          <form id="join-form" class="involved-form">
+            <label>Full name
+              <input type="text" name="name" required />
+            </label>
+            <label>Email
+              <input type="email" name="email" required />
+            </label>
+            <label>University / background
+              <input type="text" name="background" />
+            </label>
+            <label>What would you like to help with?
+              <select name="interest">
+                <option>Tech & Ops</option>
+                <option>Partnerships & Growth</option>
+                <option>Events</option>
+                <option>Media & Content</option>
+                <option>Something else</option>
+              </select>
+            </label>
+            <label class="full">Tell us a bit more
+              <textarea name="message" rows="4"></textarea>
+            </label>
+            <button type="submit" class="btn btn-instagram full">Email us this application</button>
+          </form>
+        </div>
+
+        <div class="involved-panel" id="panel-donate" hidden>
+          <p class="about-text" style="margin-top:0;">
+            We&rsquo;re still setting up our donation accounts. In the meantime, message us on
+            Instagram or send us an email and we&rsquo;ll share the transfer details with you
+            directly &mdash; you can stay completely anonymous if you&rsquo;d like.
+          </p>
+
+          <div class="leader-social-buttons">
+            <a class="btn btn-instagram" href="https://www.instagram.com/daira.ngo/" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37a4 4 0 1 1-7.914 1.174A4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              @daira.ngo
+            </a>
+            <a class="btn btn-instagram" href="mailto:daira.ngo.info@gmail.com?subject=I%27d%20like%20to%20support%20Daira">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+              daira.ngo.info@gmail.com
+            </a>
+          </div>
+
+          <div class="shoutout-box">
+            <div class="shoutout-title">Want to be featured or thanked on our story?</div>
+            <p class="shoutout-text">Totally optional — completely up to you.</p>
+
+            <div class="shoutout-choice" id="shoutout-choice">
+              <button type="button" class="btn-choice" id="shoutout-yes">Yes</button>
+              <button type="button" class="btn-choice" id="shoutout-no">No</button>
+            </div>
+
+            <form id="shoutout-form" class="involved-form" hidden>
+              <label>Name (or how you'd like to be credited)
+                <input type="text" name="shoutout-name" />
+              </label>
+              <label><span class="label-text">Instagram handle <span class="optional-tag">(optional)</span></span>
+                <input type="text" name="shoutout-insta" placeholder="@yourhandle" />
+              </label>
+              <p class="shoutout-hint full">
+                This opens your email app pre-filled — just attach your payment screenshot
+                once you&rsquo;ve sent a transfer.
+              </p>
+              <button type="submit" class="btn btn-instagram full">Email us for a shoutout</button>
+            </form>
+
+            <p class="shoutout-no-msg" id="shoutout-no-msg" hidden>
+              No worries at all — thank you so much for your support! 💛
+            </p>
+
+            <p class="shoutout-note">
+              Prefer another way to get featured? Message us on Instagram —
+              <a href="https://www.instagram.com/daira.ngo/" target="_blank" rel="noopener noreferrer">@daira.ngo</a>.
+            </p>
+          </div>
+        </div>
+       </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site">
+    <div class="container">&copy; 2026 Daira. All rights reserved. &middot; <a href="privacy.html">Privacy Policy</a></div>
+  </footer>
+
+  <script src="js/reveal.js"></script>
+  <script src="js/get-involved.js"></script>
+</body>
+</html>
