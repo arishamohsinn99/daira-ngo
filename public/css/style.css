@@ -871,3 +871,76 @@ footer.site a:hover { text-decoration: underline; }
   .rights-grid .rights-card:nth-child(4) { transition-delay: 0.3s; }
   .rights-grid .rights-card:nth-child(5) { transition-delay: 0.4s; }
 }
+
+/* ============ Mobile header: hamburger menu (same pattern as Panah) ============
+   Kept at the very end of the file on purpose. These selectors tie with the
+   base header rules near the top, and ties resolve by source order even inside
+   @media — so this block has to come last or the desktop rules win on phones. */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  margin-left: auto;
+  border: 1.5px solid rgba(243, 236, 224, 0.35);
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.nav-toggle span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--cream);
+  border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+@media (max-width: 720px) {
+  header.site .container {
+    flex-wrap: wrap;
+    padding: 12px 18px;
+  }
+  .brand-logo { width: 38px; height: 38px; }
+  .brand-name { font-size: 1.75rem; }
+
+  .nav-toggle { display: flex; }
+
+  /* hamburger becomes an X while open */
+  header.site.nav-open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  header.site.nav-open .nav-toggle span:nth-child(2) { opacity: 0; }
+  header.site.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  /* collapsed until the button opens it, then drops to its own full-width row */
+  .site-nav { display: none; }
+  header.site.nav-open .site-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    margin-top: 12px;
+    padding-top: 6px;
+    border-top: 1px solid rgba(243, 236, 224, 0.2);
+    animation: navDrop 0.22s ease;
+  }
+  .site-nav a {
+    padding: 13px 4px;
+    font-size: 1.02rem;
+    opacity: 1;
+    border-bottom: 1px solid rgba(243, 236, 224, 0.1);
+  }
+  .site-nav a:last-child { border-bottom: none; }
+  /* the desktop underline-on-hover doesn't suit full-width rows */
+  .site-nav a::after { display: none; }
+}
+
+@keyframes navDrop {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
