@@ -223,7 +223,7 @@ header.site .container {
 }
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   gap: 20px;
 }
 .service-card {
@@ -320,7 +320,11 @@ header.site .container {
 
 @media (max-width: 860px) {
   .aims { grid-template-columns: 1fr; }
-  .aims-panel-logo { order: -1; }
+  /* keep source order on phones — Aims, then the picture, then Objectives.
+     The desktop 120px top padding only exists to place the image in the
+     middle column, and at full width the image fills the whole screen. */
+  .aims-panel-logo { padding: 4px 24px 8px; }
+  .aims-justice-img { max-width: 260px; }
 }
 
 /* Plain content pages (Helplines, Rights, etc.) */
@@ -362,7 +366,7 @@ body.helplines-body .page-lead { opacity: 0.95; }
 }
 .option-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
   gap: 16px;
 }
 .option-card {
@@ -583,7 +587,7 @@ body.helplines-body .page-lead { opacity: 0.95; }
 }
 .leaders-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
   gap: 24px;
 }
 .leader-card {
@@ -732,7 +736,7 @@ body.helplines-body .page-lead { opacity: 0.95; }
 
 .payment-details {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
   gap: 16px;
   margin: 20px 0;
 }
