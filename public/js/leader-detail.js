@@ -56,6 +56,7 @@
     listHtml(leader.education) +
     '<h2>Achievements</h2>' +
     listHtml(leader.achievements) +
+    (leader.certifications ? '<h2>Licenses &amp; Certifications</h2>' + listHtml(leader.certifications) : '') +
     (leader.skills ? '<h2>Skills</h2>' + skillsHtml(leader.skills) : '');
 
   if (socialButtons.length) {
