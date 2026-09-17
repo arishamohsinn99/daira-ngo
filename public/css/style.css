@@ -57,6 +57,10 @@ header.site .container {
   align-items: center;
   gap: 12px;
 }
+/* The brand block links back to the home page, so it needs the header's own
+   colours instead of the default link blue and underline. */
+.brand-block { text-decoration: none; color: inherit; }
+.brand-block:hover .brand-name { opacity: 0.85; }
 .brand-logo {
   width: 44px;
   height: 44px;
