@@ -32,7 +32,7 @@ window.LEADER_DATA = {
     name: "Eeshal Imran",
     role: "Vice President",
     photo: "images/eeshal-imran.jpg",
-    bio: "Founder of The Nikahnama Org and HR Director on the core team at MOJZA, alongside core team roles at The Uraan Initiative and the Tehran Initiative, with over 600 hours of community service.",
+    bio: "Founder of The Nikahnama Org and HR Director on the core team at MOJZA, alongside a core team role at The Uraan Initiative, with over 600 hours of community service.",
     education: [
       "A2 Level, SAGE (School of Global and Advance Education) (2026–2027)",
       "AS Level, International School Lahore (2025)",
@@ -42,7 +42,6 @@ window.LEADER_DATA = {
       "Founder of The Nikahnama Org, a youth-led initiative breaking down marital rights and challenging cultural taboos around the Nikahnama",
       "HR Director on the core team at Mojza, after starting as an HR intern",
       "Core team member at The Uraan Initiative",
-      "Core team member at the Tehran Initiative",
       "Over 600 hours of community service",
       "Global Student Ambassador for Crimson Education's Harvard Crimson Global Essay Competition",
       "Research Fellow at GVMUN, an 8-week fellowship in international policy and global governance",
