@@ -32,18 +32,20 @@ window.LEADER_DATA = {
     name: "Eeshal Imran",
     role: "Vice President",
     photo: "images/eeshal-imran.jpg",
-    bio: "Founder of The Nikahnama Org and HR Director at MOJZA, alongside roles across several other youth-led initiatives including TheUraan Initiative, Takhayyul, Crimson, and ILC.",
+    bio: "Founder of The Nikahnama Org and HR Director on the core team at MOJZA, alongside core team roles at The Uraan Initiative and the Tehran Initiative, with over 600 hours of community service.",
     education: [
-      "A-Levels, International School Lahore (2025–2027)",
-      "O-Levels, DHA Education System (2020–2024) — Vice-President of the Debating Society, Class President, and MUN delegate at CSMUN '23 and GRAMMUN '22"
+      "A2 Level, SAGE (School of Global and Advance Education) (2026–2027)",
+      "AS Level, International School Lahore (2025)",
+      "O-Levels, DHA Education System (2020–2024): Vice-President of the Debating Society, Class President, and MUN delegate at CSMUN '23 and GRAMMUN '22"
     ],
     achievements: [
-      "Promoted to Human Resources Director at Mojza, after starting as an HR intern",
       "Founder of The Nikahnama Org, a youth-led initiative breaking down marital rights and challenging cultural taboos around the Nikahnama",
-      "Director of Programs at Aasudgi, overseeing community-impact initiatives and partnerships",
+      "HR Director on the core team at Mojza, after starting as an HR intern",
+      "Core team member at The Uraan Initiative",
+      "Core team member at the Tehran Initiative",
+      "Over 600 hours of community service",
       "Global Student Ambassador for Crimson Education's Harvard Crimson Global Essay Competition",
       "Research Fellow at GVMUN, an 8-week fellowship in international policy and global governance",
-      "Vice President at Takhayyul, after being named among the organization's best interns",
       "Certificate of Merit for her role on the DHA Sports Fest security and organizing team"
     ],
     skills: [
